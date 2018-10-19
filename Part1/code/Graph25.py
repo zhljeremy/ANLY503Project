@@ -10,18 +10,6 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-music = pd.read_csv("music_lyrics.csv")
-#music.head()
-d11 = music["date"]
-music["right_date"] = pd.to_datetime(d11)
-
-dfnew1 = pd.DataFrame()
-dfnew1["Relatively Time"] = music["right_date"]
-dfnew1["Weeks"] = music['total weeks']
-dfnew1 = dfnew1.groupby("Relatively Time").sum()
-x11 = dfnew1.index
-x22 = dfnew1["Weeks"]
-
 test = pd.read_csv("Twitter_data_with_sentiment_score.csv")
 d = test["date"]
 test["juest_date"] = pd.to_datetime(d)
