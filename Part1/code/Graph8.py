@@ -115,7 +115,7 @@ def generate_wordcloud(text, stop_words, coloring, output_path):
   plt.savefig(output_path, format="png", dpi=my_dpi)
 
 stop_words = define_stopwords()
-text = collect_text(5)
+text = collect_text(100)
 transformed_music_coloring = creat_mask("./86932.png")
 generate_wordcloud(
     text, stop_words, transformed_music_coloring, "music_wordcloud_top5.png")
