@@ -130,15 +130,15 @@ knitr::opts_chunk$set(fig.width=10, fig.height=5)
 
 # 2. What Have Changed to Popular Songs?
 
-Now, our team want to study the trend for the popular music development. The plots will show how the names of songs changed, what kind of songs will stay in the Billboard longer
+Now, our team want to study the trend for the development of popular music throughout the years. The plots will show how the names of songs changed, what kind of songs will stay in the Billboard longer
 
 **Source**: BillBoard Top 100 Weekly List, 1990 - 2010  
 **Data Grabbed**: Song Name, Artist, Number of Weeks Stayed on Billboard, Year, Peak Position, and Lyrics
   
   
 ### 1. How did the Song Name Change from 1990 to 2017?  
-#### - Calculated the Average Length of All Song Names and Visualized by Year  
-#### - The Avergae Length of Song Name Shortened Significantly
+#### - Calculated the Average Number of Words in Song Names and Visualized by Year  
+#### - The Avergae Number of Words Shortened Significantly
 
 ```{r ,fig.align='center', echo=FALSE, out.width = '100%', message=FALSE, warning=FALSE}
 trace1 <- list(
@@ -173,10 +173,10 @@ p
 <font size="4">[Graph 10(Plotly), Source Code](https://github.com/hx67/ANLY503Project/blob/master/Part1/code/Graph10.R)</font> 
 </center>
 
-## 2. Is There Any Difference Between Top 50 Songs and Bottom 50 Songs?  
-#### - This Time I calculated Average Length Again, but split by Top 50 and Bottom 50   
-#### - Bottom 50 have more variations  
-#### - Top 50, the more popular songs, have more steady decrease
+## 2. Is There Any Difference Between the Top 50 Songs and the Bottom 50 Songs?  
+#### - This time we calculated average num of words in song names again, but split by Top 50 and Bottom 50   
+#### - The Bottom 50, the relatively less popular songs, have more variations  
+#### - The Top 50, the most popular songs, have more steady decrease
 
 ```{r ,fig.align='center', echo=FALSE, out.width = '100%', message=FALSE, warning=FALSE}
 trace1 <- list(
@@ -233,8 +233,7 @@ p
 ### 3. What Songs Are More Likely to Stay Popular for Longer?  
 
 #### - Measured by Number of Weeks Stayed on Billboard  
-
-#### - By Year and Length of Words  
+#### - By Year and Number of Words in Song Names
 
 ```{r ,fig.align='center', echo=FALSE, out.width = '100%', message=FALSE, warning=FALSE}
 layout <- list(
@@ -272,8 +271,7 @@ p
 
 ### 4. What Lyrics Made Songs Popular from 2008 - 2018?
 
-#### - Ranked artists by number of songs that were ever on BillBoard  
-
+#### - Ranked artists by number of songs from them that were ever on BillBoard  
 #### - Ranked the Top 20 most common words used by those popular singers
 
 <center>
