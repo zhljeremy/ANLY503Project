@@ -324,7 +324,7 @@ knitr::include_graphics("Scatterplot.png")
 # 4.What is the characters for those popular songs' lyrics?
 # Talyor Swift Example
 
-```{r ,fig.align='center', echo=FALSE, out.width = '100%', message=FALSE, warning=FALSE}
+```{r ,fig.align='center', echo=FALSE, out.width = '100%', warning=FALSE}
 library(magrittr)
 library(stringr)
 library(dplyr)
@@ -340,7 +340,7 @@ library(readr)
 library(circlize)
 library(reshape2)
 
-lyrics <- read.csv('taylor_swift_lyrics.csv')
+lyrics <- read.csv('./data/taylor_swift_lyrics.csv')
 
 lyrics$length <- str_count(lyrics$lyric,"\\S+") 
 
