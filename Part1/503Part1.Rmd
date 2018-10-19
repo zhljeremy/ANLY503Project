@@ -496,7 +496,7 @@ title("Relationship between emotion and song's year of release")
 
 #### We can see that joy has maximum share for the years 2010 and 2014. Overall, surprise, disgust and anger  are the emotions with least score; however, in comparison to other years 2017 has maximum contribution for disgust. Coming to anticipation, 2010 and 2012 have higher contribution in comparison to other years.
 
-# 5. Is there a relationship between the mood in songs with the Twitter Users' attitudes?
+### Some other visualizations graphed by seaborn to see the popularity of the songs and how it changed during the years or even months.
 
 <center>
 ![](project52.png)
@@ -505,7 +505,7 @@ title("Relationship between emotion and song's year of release")
 <font size="4"> [Graph 24(Seaborn), Source Code](https://github.com/hx67/ANLY503Project/blob/master/Part1/code/Graph24.py)</font> 
 </center>
 
-#### The graph above shows density of relatively time and lengths of weeks that songs stayed on board. It's eaily to see that the graph has two part of high density, which means in the middle time, around year 2014, there are lot great songs been created. Also, around year 2012, a lot songs been created but did not stay on the popular board for too long time.
+#### The graph above shows the density of relatively time x-aixs and the lengths of weeks that songs stayed on board. It's eaily to tell that the graph has two part of high density, which means in the middle time of these years. Around year 2014, there are lot great songs been created. Also, around year 2012, a lot songs been created but did not stay on the board as long as the songs been created in 2014.
 
 <center>
 ![](project53.png)
@@ -514,7 +514,7 @@ title("Relationship between emotion and song's year of release")
 <font size="4"> [Graph 25(Seaborn), Source Code](https://github.com/hx67/ANLY503Project/blob/master/Part1/code/Graph25.py)</font> 
 </center>
 
-#### The graph above shows the number of favorites and retweets to the songs in the years. As we can directly, there is a huge difference before year 2017 and after year 2017. After year 2017, the number of favorties and retweets increased incredibly. That tells either the songs on the board have more influence after year 2017 or people started to be carzy of using tweets.
+#### The graph above shows the number of favorites and retweets to the songs in ten years. As we can directly see, there is a huge difference between before year 2017 and after year 2017. After year 2017, the number of favorties and retweets increased incredibly. That tells either the songs on the board have more influence after year 2017 or people started to be carzy of using tweets.
 
 <center>
 ![](project54.png)
@@ -524,7 +524,7 @@ title("Relationship between emotion and song's year of release")
 <font size="4"> [Graph 26(Seaborn), Source Code](https://github.com/hx67/ANLY503Project/blob/master/Part1/code/Graph26.py)</font> 
 </center>
 
-#### The graph above shows the distribution of songs' popularity in each year. As we can see, 2017 has highest mean, which means most songs created in 2017 are popular. However, for 2008, although the high point is really high in this year, but the mean is low. which means it has good song and also bad songs in this year.
+#### The graph above shows the distribution of songs' popularity in each year. As we can see, 2017 has highest mean, which means most songs been created in 2017 are more popular than other years. However, for 2008, although the high point is really high in this year, but the mean is low. which means it has both good songs and bad songs in this year.
 
 <center>
 ![](project55.png)
@@ -534,9 +534,11 @@ title("Relationship between emotion and song's year of release")
 <font size="4"> [Graph 27(Seaborn), Source Code](https://github.com/hx67/ANLY503Project/blob/master/Part1/code/Graph27.py)</font> 
 </center>
 
-#### The graph above shows the popularity of the songs in each month in these years. From the graph, we also expect to see some trend through the changing of the color in the graph. And as the result we can tell from the graph, it did has slight pattern of the increasing popularity from 2008 to around 2013. However, after that, popularity of the songs in each month became unpredictable.
+#### The graph above shows the popularity of the songs in each month these years. From the graph, we also expected to see some trends through the changing of the color in the graph. And as the result we can tell from the graph, it did has a slight pattern of the increasing popularity from 2008 to around 2013. However, after that, popularity of the songs in each month became unpredictable.
 
-## 5.The fifth sub-question is whether there is relationship between the sentiment analysis resutls from tweets and lyrics. In other words, the question becomes "Do the lyrics' attitudes influence people's comments about them on tweets?" and "whether the result of two attitudes' connection influence the popularity of the songs?"
+# 5. Is there a relationship between the mood in songs with the Twitter Users' attitudes?
+
+## The fifth sub-question is whether there is relationship between the sentiment analysis resutls from tweets and lyrics. In other words, the question becomes "Do the lyrics' attitudes influence people's comments about them on tweets?" and "whether the result of two attitudes' connection influence the popularity of the songs?"
 
 #### In order to answer the questions above, we have to take a look of the results of sentiment analysis from tweets and lyrics.
 
@@ -548,9 +550,9 @@ title("Relationship between emotion and song's year of release")
 <font size="4"> [Graph 28(Seaborn), Source Code](https://github.com/hx67/ANLY503Project/blob/master/Part1/code/Graph28.py)</font> 
 </center>
 
-#### The graph above showed the two-dimensional plot of sentiment analysis attitude scores. As we can see above, it seems like there is no linear relationship between the tweets' attitude and lyrics' attitude. However, we can not be sure yet untill we run some tests. However, the graph gives us one interesting information. Most points are located on the top and bottom of the graph, which means the songs that are too negative or too positive have more attetion on tweets than the normal songs.
+#### The graph above shows the two-dimensional plot of sentiment analysis attitude scores. As we can see, it seems like there is no linear relationship between the tweets' attitude and lyrics' attitude. However, we can not be sure yet untill we run some tests. Still, the graph gives us one interesting information. Most points loacte on the top and bottom of the graph, which means most of songs are either too negative or too positive. And those songs have more attetion on tweets than the normal songs.
 
-#### Next, we take a look into each indiviual analysis results.
+#### Next, we took a look into each indiviual analysis result.
 
 <center>
 ![](project56.png)
@@ -559,9 +561,9 @@ title("Relationship between emotion and song's year of release")
 <font size="4"> [Graph 29(Seaborn), Source Code](https://github.com/hx67/ANLY503Project/blob/master/Part1/code/Graph29.py)</font> 
 </center>
 
-#### As the boxplots show above, we can see that lyrics has much higher attitude points than tweets. Most of tweets are below normal, which means they are more negative while most lyrics of the songs are more positive. However, we still can be 100% sure they are significant difference, so we will run one-way ANOVA test to test our thought.
+#### As the boxplot shows above, we can see that lyrics have much higher attitude points than tweets. Most of tweets' attitude points are below normal, which means they are more negative while most lyrics of the songs are tend to be positive. However, we still can not be 100% sure that they are significant different, so we will run one-way ANOVA test to testify our thoughts.
 
-## Hypothesis test of One-Way ANOVA test
+## Hypothesis test of One-Way ANOVA test.
 <center>
 ![](project57.png)
 </center>
@@ -569,7 +571,7 @@ title("Relationship between emotion and song's year of release")
 <font size="4"> [Hypothesis1, Source Code](https://github.com/hx67/ANLY503Project/blob/master/Part1/code/Hypothesis%20Test2.py)</font> 
 </center>
 
-#### As the p-value showed above, since it is below 0.05, which rejects the null hypothesis, which means there is a significant difference between lyrics' attitude points and tweets' attitude points. Since we know they are different, we are moving to next level, to test whether there is a relationship.
+#### As the p-value show above, since the p-value is below 0.05, which rejects the null hypothesis. Then it means there is a significant difference between lyrics' attitude points and tweets' attitude points. Since we know they are different, we are moving to the next part, to test whether there is a relationship between lyrics' attitude and tweets' attitude.
 
 ## Hypothesis test of Linear regression test.
 
@@ -581,6 +583,6 @@ title("Relationship between emotion and song's year of release")
 <font size="4"> [Hypothesis2, Source Code](https://github.com/hx67/ANLY503Project/blob/master/Part1/code/Hypothesis%20Test1.py)</font> 
 </center>
 
-#### As the results showed above, we use the number of weeks stayed on board as addition terms that may related to the attitude points. and we found out that all p-vlaue are much greater than 0.05, which means fail to reject he hyoithesis test, and it means there is no significant linear relationship between Tweets' attitude points and neither lyrics' attitude points nor number of weeks stayed on board( which may also be thought as popularity).
+#### As the results show above, we used the number of weeks that songs stayed on board as addition term that may relates to the attitude points. Then we found out that all p-vlaues are much greater than 0.05, which means it failed to reject he hyoithesis test, and it means there is no significant linear relationship between Tweets' attitude points and neither lyrics' attitude points nor the number of weeks that songs stayed on board( which may also be thought as popularity).
 
-#### Through the hypothesis tests we did above, we found out that tweets' attitude and lyrics' attitude of the songs have significant differences, and there is no significant linear relationship between them. However, that does not tell the everything between them. Add on other possible related terms and use other forwards tests may still get some good results. So, in the next part of project, we gonna dig much deeper to discover the probilities that they are connected and how they may influence each other in any possible ways.
+#### Through the hypothesis tests we did above, we found out that tweets' attitude and lyrics' attitude of the songs have significant differences, and there is no significant linear relationship between them. However, that does not tell the everything between them. Adding other possible related terms and use other forward tests may still get some good results. So, in the next part of project, we gonna dig much deeper to discover the possibilities that they connect with each other, and how they may influence each other in any possible ways.
