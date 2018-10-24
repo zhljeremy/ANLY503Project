@@ -281,15 +281,6 @@ p
 <font size="4">[Graph 13(Matplotlib), Source Code](https://github.com/hx67/ANLY503Project/blob/master/Part1/code/NO)</font> 
 </center>
   
-### How are these common words used by the Top 20 Artists?  
-#### - 5. Visualized there Lexical Dispersion Over the Most Common words
-<center>
-![](idp.png)
-</center>
-<center>
-<font size="4"> [Graph 14(Matplotlib), Source Code](https://github.com/hx67/ANLY503Project/blob/master/Part1/code/No)</font> 
-</center>
-
 # 3. Who is the most popular singers in last ten years in Billboard?
 
 #### First let us have a look at those artists with the most songs on Billboard's Top 100 Hits in the last ten years.
